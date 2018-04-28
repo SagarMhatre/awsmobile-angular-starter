@@ -15,9 +15,15 @@
 >npm install -g awsmobile-cli
 >awsmobile --version
 	1.1.2
+	
+Ref : https://aws.github.io/aws-amplify/media/angular_guide
 >npm install --save aws-amplify
 	+ aws-amplify@0.3.3
 >npm install --save aws-amplify-angular
 	+ aws-amplify-angular@0.1.0
+>awsmobile init
+	? What is your project's build command:  ng build
+	? What is your project's start command for local test run:  ng serve
+
 
 
