@@ -25,5 +25,11 @@ Ref : https://aws.github.io/aws-amplify/media/angular_guide
 	? What is your project's build command:  ng build
 	? What is your project's start command for local test run:  ng serve
 
-
+>awsmobile user-signin enable --prompt
+	? Sign-in is currently disabled, what do you want to do next Go to advance settings
+	? Which sign-in method you want to configure Cognito UserPools (currently disabled)
+	? How are users going to login Email
+	? Password minimum length (number of characters) 8
+	? Password character requirements uppercase, lowercase, numbers, special characters
+>awsmobile push
 
