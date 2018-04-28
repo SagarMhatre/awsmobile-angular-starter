@@ -5,11 +5,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 import { AuthenticatorComponent } from './authenticator/authenticator.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthenticatorComponent
+    AuthenticatorComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule, AmplifyAngularModule

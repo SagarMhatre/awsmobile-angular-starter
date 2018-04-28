@@ -49,3 +49,23 @@ Code change :
 	.then(() => {this.amplifyService.setAuthState({ state: 'signedIn', user: user }); 		//changed
 After making changes to the code in sign-in.component.ts,need to run 
 	\node_modules\aws-amplify-angular>npm run build
+
+Adding routing to an existing app ,
+     in src\index.html
+         <base href = "/">
+     create file app/app.routing.modules.ts with below contents
+         import { NgModule } from '@angular/core';
+         import { Routes, RouterModule } from '@angular/router';
+ 
+         const routes: Routes = [];
+ 
+         @NgModule({
+         imports: [RouterModule.forRoot(routes)],
+         exports: [RouterModule]
+         })
+         export class AppRoutingModule { }
+     in src\app\app.module.ts
+         import { AppRoutingModule } from './app-routing.module';
+         imports: [    AppRoutingModule ...
+    in the app.component.html
+        <router-outlet></router-outlet>
