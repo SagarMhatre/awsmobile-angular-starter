@@ -11,3 +11,13 @@
 >git init
 >git remote add origin https://github.com/SagarMhatre/awsmobile-angular-starter.git
 >git push -u origin master
+
+>npm install -g awsmobile-cli
+>awsmobile --version
+1.1.2
+>npm install --save aws-amplify
++ aws-amplify@0.3.3
+>npm install --save aws-amplify-angular
++ aws-amplify-angular@0.1.0
+
+
