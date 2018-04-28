@@ -33,3 +33,6 @@ Ref : https://aws.github.io/aws-amplify/media/angular_guide
 	? Password character requirements uppercase, lowercase, numbers, special characters
 >awsmobile push
 
+Rename aws_exports.js to aws_exports.ts
+Import the configuration file and load it in your main.ts
+Included the “node” package in types compiler option of tsconfig.app.json
