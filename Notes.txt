@@ -53,7 +53,7 @@ After making changes to the code in sign-in.component.ts,need to run
 Adding routing to an existing app ,
      in src\index.html
          <base href = "/">
-     create file app/app.routing.modules.ts with below contents
+     create file app/app.routing.module.ts with below contents
          import { NgModule } from '@angular/core';
          import { Routes, RouterModule } from '@angular/router';
  
