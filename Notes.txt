@@ -1,0 +1,13 @@
+>cd C:\Users\Laptop\Documents\Workspace
+>cd  AWS
+>npm install -g @angular/cli
+>ng --version
+	Angular CLI: 1.7.4
+	Node: 8.9.4
+
+>ng new awsmobile-angular-starter
+>cd awsmobile-angular-starter
+
+>git init
+>git remote add origin https://github.com/SagarMhatre/awsmobile-angular-starter.git
+>git push -u origin master
