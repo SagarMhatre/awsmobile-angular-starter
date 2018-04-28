@@ -39,3 +39,13 @@ Included the “node” package in types compiler option of tsconfig.app.json
 
 Adding authenticator component with inline template
 >ng g c authenticator -it
+
+Changing code in node_module
+The node_modules\aws-amplify-angular\src\components\authenticator\sign-in.component.ts 
+has logic that always takes you to the node_modules\aws-amplify-angular\src\components\authenticator\confirm-sign-in.component.ts
+where you are asked for MFA Code after successful sign in (does not check if MFA is required or not)
+Code change :
+	.then(() => {this.amplifyService.setAuthState({ state: 'confirmSignIn', user: user }); 	//previous
+	.then(() => {this.amplifyService.setAuthState({ state: 'signedIn', user: user }); 		//changed
+After making changes to the code in sign-in.component.ts,need to run 
+	\node_modules\aws-amplify-angular>npm run build
