@@ -36,3 +36,6 @@ Ref : https://aws.github.io/aws-amplify/media/angular_guide
 Rename aws_exports.js to aws_exports.ts
 Import the configuration file and load it in your main.ts
 Included the “node” package in types compiler option of tsconfig.app.json
+
+Adding authenticator component with inline template
+>ng g c authenticator -it
