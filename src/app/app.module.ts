@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
 import { AuthenticatorComponent } from './authenticator/authenticator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCheckboxModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     DashboardComponent
   ],
   imports: [
-    BrowserModule, AmplifyAngularModule, AppRoutingModule 
+    BrowserModule, AmplifyAngularModule, AppRoutingModule ,BrowserAnimationsModule,
+    MatCheckboxModule
   ],
   providers: [AmplifyService],
   bootstrap: [AppComponent]
