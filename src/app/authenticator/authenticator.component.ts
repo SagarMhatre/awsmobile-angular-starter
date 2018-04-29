@@ -7,7 +7,7 @@ import { Router } from "@angular/router";
   template: `
     <amplify-authenticator></amplify-authenticator> 
    `,
-  styleUrls: ['authenticator.component.css']
+  styleUrls: ['authenticator.component.scss']
 })
 export class AuthenticatorComponent implements OnInit {
 
