@@ -4,10 +4,7 @@ import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-dashboard',
-  template: `
-    <span class="amplify-greeting-text">{{ greeting }}</span>
-    <button mat-raised-button color="warn" *ngIf="signedIn" (click)="onSignOut()">Sign Out</button>
-  `,
+  templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {

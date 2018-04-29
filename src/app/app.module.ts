@@ -9,6 +9,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,8 @@ import {MatButtonModule} from '@angular/material/button';
   ],
   imports: [
     BrowserModule, AmplifyAngularModule, AppRoutingModule ,BrowserAnimationsModule,
-    MatCheckboxModule, MatButtonModule
+    MatCheckboxModule, MatButtonModule, MatToolbarModule,
+    MatExpansionModule,MatFormFieldModule,MatInputModule
   ],
   providers: [AmplifyService],
   bootstrap: [AppComponent]
