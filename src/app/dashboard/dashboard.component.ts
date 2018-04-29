@@ -6,10 +6,7 @@ import { Router } from "@angular/router";
   selector: 'app-dashboard',
   template: `
     <span class="amplify-greeting-text">{{ greeting }}</span>
-    <button class="amplify-form-button amplify-greeting-sign-out"
-        *ngIf="signedIn"
-        (click)="onSignOut()"
-      >Sign Out</button>
+    <button mat-raised-button color="warn" *ngIf="signedIn" (click)="onSignOut()">Sign Out</button>
   `,
   styleUrls: ['./dashboard.component.scss']
 })

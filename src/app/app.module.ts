@@ -8,6 +8,7 @@ import { AuthenticatorComponent } from './authenticator/authenticator.component'
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import {MatCheckboxModule} from '@angular/material';
   ],
   imports: [
     BrowserModule, AmplifyAngularModule, AppRoutingModule ,BrowserAnimationsModule,
-    MatCheckboxModule
+    MatCheckboxModule, MatButtonModule
   ],
   providers: [AmplifyService],
   bootstrap: [AppComponent]
