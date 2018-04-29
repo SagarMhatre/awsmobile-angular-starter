@@ -81,3 +81,7 @@ Manually rename teh .css extension to .scss
 Import the theme css in the styles.css
 Import the BrowserAnimationsModule & modules for each component that we plan to use
 Use the component tag as required
+
+Overriding default css of child components
+    import {  ViewEncapsulation } from '@angular/core';
+    @Component({ encapsulation: ViewEncapsulation.None , ...
